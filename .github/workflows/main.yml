@@ -1,5 +1,4 @@
-echo "
-name: Hello Workflow
+name: Basic Workflow
 
 on: [push]
 
@@ -7,6 +6,5 @@ jobs:
   say-hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Echo Hello
-        run: echo 'Hello from GitHub Actions!'
-" > .github/workflows/hello.yml
+      - name: Say Hello
+        run: echo "Hello from GitHub Actions!"
